@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+   <main>
+
+         <header class="row_items">
+             <h1>
+                <img src="./img/logo.png" alt="logo">
+                <img src="https://photos.google.com/share/AF1QipN-YJjt0oF_rW41qPOjISLGX5Nu5TFEYIV2ekki_RtMz1kReIWMGG0kdci_j6pZsg?key=RDFDdGNIVmlVYWxYQmVpa1ZkZUFnMDRYdldXVU" alt="">
+             </h1>
+             <nav>
+                <a href="index.html">Home</a> 
+                <a href="index.html">Productos</a>
+                <a href="contactos.html">Contacto</a>
+             </nav>
+         </header>
+
+         <section class="col_items col_items_contacto">
+
+          <form action="#" method="get" class="col_items">
+
+            <label for="campoNombre">Nombre</label>
+            <input type="text" name="nombre" id="campoNombre" required pattern="^[a-zA-Z ]+$">
+
+            <label for="campoApellido">Apellido</label>
+            <input type="text" name="apellido" id="campoApellido" required pattern="^[a-zA-Z ]+$">
+             
+            <label for="campoCorreo">Correo Electrónico</label>
+            <input type="email" name="email" id="campoCorreo" required  placeholder="email@domain.com">
+
+            <label for="campoTelefono">Telefono</label>
+            <input type="tel" name="telefono" id="campoTelefono" required pattern="[0-9]{8}">
+
+            <label for="campoMensaje">Mensaje</label>
+            <textarea name="mensaje" id="campoMensaje" cols="70" rows="10"></textarea>
+            
+            <fieldset class="col_items separador">
+                <legend>¿Como le guitaría que lo contactemos?</legend>
+
+                 <label for="radioEmail">
+                    <input type="radio" name="opcionContacto"  id="radioEmail" value="Email">
+                    Correo Electrónico
+                </label>
+                
+                <label for="radioEmail">
+                    <input type="radio" name="opcionContacto"  id="radioTelefono" value="Telefono">
+                    Telefono
+                </label>
+                
+                <label for="radioWhatsapp">
+                    <input type="radio" name="opcionContacto"  id="radioWhatsapp" value="Whatsapp" checked>
+                    Whatsapp
+                </label>
+                
+            </fieldset> 
+
+            <fieldset class="col_items separador">
+
+                <legend>
+                    <p>En cuál horario prefiere ser atendido?</p>
+                </legend>
+            
+                <select name="atencion" id="campoAtencion" class="separador">
+                    <option value="manana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+            </fieldset>
+
+            <label for="campoOpcion" class="separador">
+                <input type="checkbox" name="checkbox" id="campoOpcion">
+                Le gustaría recibir novedades sobre la Barbería alura
+            </label> 
+            
+             
+            <input type="submit" value="enviar" class="enviar">
+          </form>
+
+          <table class="separador">
+            <thead>
+                <tr>
+                    <th>Dias</th>
+                    <th>Horarios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>8h - 20h</td>
+                </tr>
+            </tbody>
+          </table>
+          
+         </section>
+
+         <footer>
+            <img src="./img/logo-blanco.png" alt="logo blanco">
+            <p>&copy; Barberia alura - 2023</p>
+        </footer>
+
+    </main>
+</body>
+</html>
